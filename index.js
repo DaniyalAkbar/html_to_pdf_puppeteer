@@ -6,6 +6,7 @@ app.use(express.json());
 
 app.get("/test", service.hello_world);
 app.post("/pdf", service.generate_pdf);
+app.post("/pdf-with-css", service.generate_pdf_with_css);
 
 
 app.listen(3000, ()=> {
